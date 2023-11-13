@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+Montserrat Penaloza-Amion's Portfolio
+MAO project section
+-->
+<html>
+	<head>
+		<title>Montserrat's Simulation Workflow Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../../index.html" class="logo">Back to Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="../../index.html"> Portfolio</a></li>
+							<li><a href="../../AboutMe.html">About me</a></li>
+							<li><a href="../../volunteer.html">Volunteer Stories</a></li>
+							<li><a href="../../gallery.html">Gallery</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/m-penaloza-amion" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/montserratamion/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Simulation Workflow projects<br /></h1>
+									<p>Computational Scientist, Chemistry (2017-2022)<br />
+									Institute of Nanotechnology, Karlsruhe Institute of Technology (Germany) 
+									</p>
+								</header>
+								<div class="image main"><img src="images/simstack.png" alt="" /></div>
+
+								<p>SimStack is a lightweight client-server program developed by Prof. Wenzel’s group at the Karlsruhe Institute of Technology (KIT) and Nanomatch GmbH. It provides a graphical user interface to construct simulation workflows from individual program or protocol units called Workflow Active Nodes (WaNos) using High Power Computer (HPC) resources. SimStack uses Extensible Markup Language (XML) format to generate the graphical interface for the settings of each WaNo, which is human readable and user friendly language, even for non-developer users. SimStack can be easily used by non-computer scientists to make closer the relationship between experiment-theory and vice versa.</p>
+
+								<h2>Project 1</h2>
+								
+								<p>SimStack was used to study the possible conformations of oligomer sequences. A protocol was created to systematically create oligomer atomic models from Oligomer Encoder (OE) sequences. OE is a tool containing a monomer library of SMILES codes linked to a three letter code similar to a 3-letter proteins amino acid system. These monomers are then optimised using TURBOMOLE . The optimized monomer structures are used to calculate charges using the AM1-BCC method. Parameters from the General Amber FF  are extracted with Acpype  to generate GROMACS  input files.  Once GROMACS input files are created, Monte Carlo simulation inputs are generated using the Python protocol provided by SIMONA. This strategy allows OE to be a highly scalable molecule builder.</p>
+
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image fit"><img src="images/DO.jpg" alt="" /></span></div>
+										<!--<div class="col-4"><span class="image fit"><img src="images/DH.jpg" alt="" /></span></div>-->
+									</div>
+								</div>
+
+								<h3>Publications</h3>
+
+									<div class="col-6 col-12-small">
+										<ul class="actions stacked">
+											<li><a href="https://doi.org/10.3389/fphy.2021.635959" class="button fit">Designer Oligomer publication - SIMONA Review</a></li>
+										</ul>
+									</div>
+
+						
+
+								<h2>Project 2</h2>
+
+
+								<p>SimStack was also used to explore the possible dihedral values on the backbone of the polymer, using SIMONA, TURBOMOLE, and SimStack. The WaNo SIMONADHscan was built to generate molecular structures using SMILES code as input. Then a specific SIMONA scan protocol was individually applied to all possible torsion angles identified. The scan protocol uses the metropolis MC algorithm to perform arbitrary rotations of a selected torsion angle and apply relaxations on adjacent torsion angles. The total energy of each configuration is calculated using the Coulomb, and Lenard-Jones terms from GAFF.
+								</p>
+								<div class="image main"><img src="images/DH.jpg" alt="" /></div>
+								
+								
+								<h3>Publications</h3>
+
+									<div class="col-6 col-12-small">
+										<ul class="actions stacked">
+											<li><a href="https://doi.org/10.3389/fmats.2022.877597" class="button fit">Dihedral Scan Workflow - SimStack</a></li>
+										</ul>
+									</div>
+
+									<h3>GitHub Repositories</h3>
+									<div class="col-6 col-12-small">
+										<ul class="actions stacked">
+									
+											<li><a href="https://github.com/KIT-Workflows/Dihedral-Scan" class="button fit">Dihedral Scan Workflow</a></li>
+										</ul>
+							
+
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+
+					<section class="split contact">
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/m-penaloza-amion" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/montserratamion/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
